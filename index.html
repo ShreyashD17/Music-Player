@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merriweather:wght@300&family=Montserrat:wght@700&family=PT+Serif&family=Roboto:wght@300&family=Sacramento&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" >
+    <div class="container">
+        <div class="box">
+            <audio src="" id="audio"></audio>
+            <div class="top">
+                   <div id="work">Enjoy The Music</div>
+                   <div id="image"><img id="song-image" src="./image/calmdown.jpg" alt=""></div>
+                   <div class="track-name">Track Name</div>
+                   <div class="track-artist">Track Artist</div>
+            </div>
+            <div class="middle1">
+                  <div class="track">
+                    <input type="range" min="0" max="100" value="0" class="seek_slider">
+                  </div>
+                  <div class="time">
+                    <div class="current-time">00:00</div>
+                    <div class="total-duration">00:00</div>
+                  </div>
+            </div>
+            <div class="middle2">
+                   <i class="fa-solid fa-volume-xmark volm0"></i>
+                   <input type="range" min="0" max="100" value="100" class="volume_slider">
+                   <i class="fa-solid fa-volume-high volm1"></i>                   
+            </div>
+            <div class="bottom">
+                   <div class="replay"><i class="fa-solid fa-rotate-right"></i></div>
+                   <div class="previous"><i class="fa-solid fa-backward"></i></div>
+                   <div class="play-pause"><i class="fa-solid fa-circle-play" id="play"></i></div>
+                   <div class="next"><i class="fa-solid fa-forward"></i></div>
+                   <div class="like"><i class="fa-solid fa-heart" style="color: #69859b;"></i></i></i></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+</body>
+</html>
